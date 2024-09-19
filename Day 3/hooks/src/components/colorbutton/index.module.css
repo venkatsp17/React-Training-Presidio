@@ -1,0 +1,13 @@
+.color_button{
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    width: 40%;
+    font-weight: bold;
+    color: aliceblue;
+    font-size: 1em;
+}
+
+.color_button:hover{
+   opacity: 0.8;
+}

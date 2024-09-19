@@ -1,0 +1,27 @@
+.search_container{
+    margin-bottom: 10px;
+}
+
+
+.search_container input[type=text] {
+    padding: 8px;
+    margin-top: 8px;
+    font-size: 17px;
+    border-radius: 8px 0px 0px 8px;
+    border: none;
+  }
+  
+  .search_container button {
+    padding: 8px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #f0bfbf;
+    font-size: 17px;
+    border: none;
+    border-radius: 0px 8px 8px 0px;
+    cursor: pointer;
+  }
+  
+  .search_container button:hover {
+    background: #ccc;
+  }

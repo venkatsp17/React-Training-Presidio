@@ -1,0 +1,38 @@
+.form_header{
+    margin: 5px;
+}
+
+.form_text{
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.form_field{
+    width: 60%;
+    padding: 12px 20px;
+    margin: 10px;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+
+.form_button{
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    width: 15%;
+    min-width: 200px;
+    font-weight: bold;
+    color: aliceblue;
+    font-size: 1em;
+    margin: 10px;
+    background-color: #28b70c;
+}
+
+.form_button:hover{
+   opacity: 0.8;
+}

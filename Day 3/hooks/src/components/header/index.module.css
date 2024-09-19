@@ -1,0 +1,17 @@
+.header{
+    padding: 5px;
+    background-color: #b3b2b2;
+}
+
+.top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #b3b2b2;
+}
+
+.button_menu{
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+}
