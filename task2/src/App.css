@@ -1,0 +1,48 @@
+.main{
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  background-color: skyblue;
+}
+
+.main-card{
+  padding: 12px;
+  width: 30%;
+  background-color: aliceblue;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+
+
+
+.reaction-main{
+  display: flex;
+  align-items: center;
+}
+
+.reaction-section{
+  border:  1px solid blue;
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+}
+
+.reaction-text{
+  padding: 5px;
+}
+
+.reaction-icon{
+  color: blue;
+}
+
+.btn{
+  background-color: aliceblue;
+  border: 1px solid blue;
+  margin-top: 5px;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  width: 50%;
+}
