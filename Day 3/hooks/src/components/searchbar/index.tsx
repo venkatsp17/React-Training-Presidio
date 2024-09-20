@@ -6,9 +6,7 @@ import { ItemContext } from "../../context/ItemContext";
   const Searchbar = () => {
     const context = useContext(ItemContext);
 
-    const { items } = context;
-
-    const [keyword, setkeyword] = useState<string>("");
+    const { setsearchItem, searchKeyword } = context;
 
     const inputRef = useRef<HTMLInputElement>(null);
 
@@ -21,7 +19,7 @@ import { ItemContext } from "../../context/ItemContext";
 
     return (
         <div className={styles.search_container}>
-          <input ref={inputRef} onChange={(event)=>setkeyword(event.target.value)} type="text" placeholder="Search.." name="search"/>
+          <input ref={inputRef} value={searchKeyword} onChange={(event)=>setsearchItem(event.target.value)} type="text" placeholder="Search.." name="search"/>
           <button type="submit">🚀</button>
         </div>
     );

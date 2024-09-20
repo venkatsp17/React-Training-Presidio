@@ -7,6 +7,7 @@ type ContextProviderProps = {
 enum ItemActionKind {
     Add = 'Add',
     Remove = 'Remove',
+    Search = 'Search'
 }
 
 interface ItemActionType {
@@ -22,7 +23,9 @@ type ItemContextType = {
             description: string;
         }[],
     addItem: (data: ItemContextInputType) => void,
-    removeItem: (id: number) => void
+    removeItem: (id: number) => void,
+    setsearchItem: (keyword: string) => void
+    searchKeyword: string
 };
 
 const initialState: ItemContextType = {
@@ -34,7 +37,9 @@ const initialState: ItemContextType = {
         }
     ],
     addItem: () => {},
-    removeItem: () => {}
+    removeItem: () => {},
+    setsearchItem: ()=>{},
+    searchKeyword: ""
 };
 
 type ItemContextInputType = {
@@ -56,6 +61,11 @@ function ItemReducer(state: ItemContextType, action: ItemActionType):ItemContext
             return {
                 ...state,
                 items: state.items.filter(item => item.id !== payload.id)
+            };
+        case ItemActionKind.Search:
+            return {
+                ...state,
+                searchKeyword: payload.name
             };
         default:
             return state;
@@ -82,6 +92,10 @@ export const ItemContextProvider = ({children}:ContextProviderProps) => {
         },
         removeItem: (id: number) => {
             dispatch({ type: ItemActionKind.Remove, payload: { id, name: '', description: '' } });
+        },
+        searchKeyword: state.searchKeyword,
+        setsearchItem: (keyWord: string) =>{
+            dispatch({type: ItemActionKind.Search, payload: {id:0, name:keyWord, description:''}})
         }
     };
 

@@ -20,7 +20,7 @@ const AddItemForm = () => {
     function AddItem(event: FormEvent){
         event.preventDefault();
         addItem({
-            id:items.length + 1,
+            id:items[items.length - 1].id + 1,
             name: name,
             description:description
         });
