@@ -1,0 +1,36 @@
+name: Deploy React App
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+
+      - name: Navigate to project directory
+        run: cd 'Day 3/hooks'
+
+      - name: Install dependencies
+        run: npm install
+        working-directory: 'Day 3/hooks'
+
+      - name: Build project
+        run: npm run build
+        working-directory: 'Day 3/hooks'
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: 'Day 3/hooks/build'
