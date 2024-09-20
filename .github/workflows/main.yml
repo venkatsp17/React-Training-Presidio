@@ -18,16 +18,17 @@ jobs:
         with:
           node-version: '16'
 
-      - name: Navigate to project directory
-        run: cd 'Day 3/hooks'
-
       - name: Install dependencies
         run: npm install
         working-directory: 'Day 3/hooks'
+        env:
+          CI: false
 
       - name: Build project
         run: npm run build
         working-directory: 'Day 3/hooks'
+        env:
+          CI: false
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
