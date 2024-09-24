@@ -1,0 +1,12 @@
+.navbar_main{
+    display: flex;
+    justify-content: space-around;
+    padding: 1%;
+    align-items: center;
+    min-height: 54px;
+    height: 10%;
+}
+
+h2{
+    margin: 0;
+}
