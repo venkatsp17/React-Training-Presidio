@@ -1,0 +1,8 @@
+.homeMain{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* background-color: aqua; */
+    overflow-y: scroll;
+    height: 100vh;
+}

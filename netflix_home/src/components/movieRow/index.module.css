@@ -1,0 +1,16 @@
+.movieRow {
+    position: relative;
+    /* overflow-x: hidden; */
+    width: 100%;
+}
+.rowContainer {
+    display: flex;
+    align-items: center;
+  }
+  
+  .cardsContainer {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+  }
+  

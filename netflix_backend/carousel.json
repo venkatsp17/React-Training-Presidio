@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "carouselposter": "https://images.ctfassets.net/4cd45et68cgf/7JiW5JIJZaNi0LBJXQCuON/28ee69e49f0ca93e29adc4464e82f358/EN-US_MyNameS1_Teaser_Solo_Horizontal_RGB_PRE.jpg?w=2000",
+        "imdbRating": 7.8,
+        "title":"My Name",
+        "type":"series",
+        "streams": "2B"
+    },
+    {
+        "id": 2,
+        "carouselposter": "https://wallpapercave.com/wp/wp7241840.png",
+        "imdbRating": 8.2,
+        "title":"Money Heist",
+        "type":"series",
+        "streams": "3B"
+    },
+    {
+        "id": 3,
+        "carouselposter": "https://www.heavenofhorror.com/wp-content/uploads/2023/10/ballerina-2023-netflix-review.jpg",
+        "imdbRating": 6.67,
+        "title":"Shadow and Bone",
+        "type":"movie",
+        "streams": "1B"
+    }
+]

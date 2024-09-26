@@ -1,0 +1,38 @@
+.searchMain{
+    display: flex;
+    flex-direction: column;
+    height: 10vh;
+    width: 100%;
+}
+.searchHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 3%;
+}
+
+.searchContainer {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+}
+
+.searchBar {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 25px;
+    background-color: #d3d3d3; 
+    font-size: 18px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.searchBar:focus {
+    outline: none;
+    box-shadow: 0 4px 6px rgba(212, 211, 211, 0.2);
+}
+
+.imdbLogo{
+    height: 35px;
+    width: 100px;
+}
